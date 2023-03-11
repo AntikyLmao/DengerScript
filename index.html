@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denger's Scripts</title>
+    <link rel="shortcut icon" href="Assets/Logos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- google adsense-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8948899579473623"
+        crossorigin="anonymous"></script>
+
+
+    <!-- smart look -->
+    <script type='text/javascript'>
+        window.smartlook || (function (d) {
+            var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
+            c.charset = 'utf-8'; c.src = 'https://web-sdk.smartlook.com/recorder.js'; h.appendChild(c);
+        })(document);
+        smartlook('init', '4a88dc7c386ff5502adc974f5b85f57cbdd22663', { region: 'eu' });
+    </script>
+
+    <!-- google analytics Marius-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y1VK8138T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7Y1VK8138T');
+    </script>
+
+    <!-- google analytics Anthony-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMZ90GW27N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FMZ90GW27N');
+    </script>
+</head>
+
+<body>
+    <script>
+        function NavBarOpenClose() {
+                 document.getElementById("main-page-navbar-buttons").style.display = "none";
+        }
+    </script>
+    <div class="main-page-container">
+        <nav class="main-page-navbar-wrapper">
+            <button class="main-page-navbar-logo">
+                <img src="Assets/Logos/NoBGLogo.png">
+            </button>
+            <header class="main-page-navbar-header">Denger</header>
+            <a href="javascript:void(0);" class="main-page-navbar-menu-icon" onclick="NavBarOpenClose()">
+                <img src="Assets/Icons/Menu.png">
+            </a>
+        </nav>
+        <div id="main-page-navbar-buttons">
+            <center>
+                <a class="active">Home</a>
+                <a href="Scripts.html">Scripts</a>
+                <a class="youtube" href="https://www.youtube.com/@Denger" , target="_blank">Youtube</a>
+                <a href="https://discord.gg/BWHm3yG7X4" target="_blank">Discord</a>
+            </center>
+        </div>
+
+    </div>
+    <!---
+    <script src="script.js"></script>
+    -->
+</body>
+
+</html>
