@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denger's Scripts</title>
     <link rel="shortcut icon" href="Assets/Logos/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='/style.css?<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/style.css"); ?>' />
 
 
     <!-- google adsense-->
@@ -46,8 +46,23 @@
     </script>
 </head>
 
-<body>
-    <div class="main-page-container">
+<body onload="PageLoad()">
+    <script>
+        var myVar;
+        // start of starting loader
+        function PageLoad() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            var container = document.getElementById("main-page-container")
+            document.getElementById("loader").style.display = "none";
+            container.style.display = "block";
+            container.style.animation = "showpage 1.5s";
+        }
+    </script>
+    <div id="loader"></div>
+    <div id="main-page-container">
         <nav class="main-page-navbar-wrapper">
             <button class="main-page-navbar-logo">
                 <img src="Assets/Logos/NoBGLogo.png">
@@ -63,17 +78,40 @@
                 <a href="#">Youtube</a>
                 <a href="#">Discord</a>
                 <a href="#">Contact</a>
-              </div>
+            </div>
         </nav>
+        <div class="Main-Page-Content">
+            <div id="main-page-left-banner-ad">
+
+            </div>
+
+            <div id="main-page-content-container">
+                <div class="main-page-grid-content">
+
+                </div>
+                <div class="main-page-grid-content">
+
+                </div>
+                <div class="main-page-grid-content">
+
+                </div>
+                <div class="main-page-grid-content">
+
+                </div>
+            </div>
+
+            <div id="main-page-right-banner-ad">
+
+            </div>
+        </div>
     </div>
-
-
-
-
-    <script src="script.js"></script>
-    <footer>
-
-    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+        }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; document.getElementById("main").style.marginRight = "0"; }
+    </script>
 </body>
 
 </html>
