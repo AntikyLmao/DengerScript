@@ -1,7 +1,0 @@
-            <div id="desktop-navbar-buttons" class="none" value="hidden">
-                <button class="active">Home</button>
-                <button>Scripts</button>
-                <button>Youtube</button>
-                <button>Discord</button>
-                <button>Contact</button>
-            </div>
