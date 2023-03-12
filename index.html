@@ -53,23 +53,27 @@
                 <img src="Assets/Logos/NoBGLogo.png">
             </button>
             <header class="main-page-navbar-header">Denger</header>
-            <a href="javascript:void(0);" class="main-page-navbar-menu-icon" onclick="NavBarOpenClose()">
+            <a href="javascript:void(0);" id="main-page-navbar-menu-icon" value="off" onclick="openNav()">
                 <img src="Assets/Icons/Menu.png">
             </a>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Scripts</a>
+                <a href="#">Youtube</a>
+                <a href="#">Discord</a>
+                <a href="#">Contact</a>
+              </div>
         </nav>
-        <div id="main-page-navbar-buttons">
-            <center>
-                <a class="active">Home</a>
-                <a href="Scripts.html">Scripts</a>
-                <a class="youtube" href="https://www.youtube.com/@Denger" , target="_blank">Youtube</a>
-                <a href="https://discord.gg/BWHm3yG7X4" target="_blank">Discord</a>
-            </center>
-        </div>
-
     </div>
 
-    <script src="script.js"></script>
 
+
+
+    <script src="script.js"></script>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
