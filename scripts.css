@@ -1,0 +1,483 @@
+html {
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+    height: 100%
+}
+
+body {
+    position: absolute;
+    background-color: #0d0d0d;
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sora:wght@500&display=swap');
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* page stuff */
+/* page stuff */
+
+
+@keyframes open-navbar {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000000;
+    width: 100px;
+    height: 100px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #89CFF0;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#main-page-container {
+    position: relative;
+    width: 100%;
+    max-height: fit-content;
+    display: none;
+}
+
+@keyframes showpage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+.Main-Page-Content {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    left: 0px;
+    top: 100px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    z-index: 900;
+}
+
+.main-page-navbar-wrapper {
+    position: fixed;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    z-index: 10000000;
+}
+
+.main-page-navbar-logo {
+    position: relative;
+    background-color: transparent;
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 0px;
+    cursor: pointer;
+    right: 46%;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.main-page-navbar-logo:hover {
+    cursor: pointer;
+    background-color: rgb(19, 19, 19);
+}
+
+
+
+.main-page-navbar-logo img {
+    position: relative;
+    background-color: transparent;
+    aspect-ratio: 1/1;
+    height: 70px;
+}
+
+.main-page-navbar-header {
+    position: relative;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 600%;
+    font-weight: 700;
+    top: -105%;
+    display: block;
+}
+
+#main-page-navbar-menu-icon {
+    position: fixed;
+    background-color: transparent;
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 0px;
+    cursor: pointer;
+    margin: 10px;
+    margin-right: 20px;
+    top: 1%;
+    left: 93%;
+    display: block;
+}
+
+#main-page-navbar-menu-icon img {
+    position: relative;
+    background-color: transparent;
+    aspect-ratio: 1/1;
+    height: 55px;
+}
+
+#desktop-navbar-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 13px;
+    background-color: transparent;
+    width: 35%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    right: -800px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Sora', sans-serif;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.Latest-Video-Title {
+    position: absolute;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.4vw;
+    left: 30px;
+    top: -15px;
+}
+
+.Latest-Script-Title {
+    position: absolute;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.4vw;
+    left: 30px;
+    top: -15px;
+}
+
+.Trending-Video-Title {
+    position: absolute;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 40px;
+    left: 20px;
+    top: -5px;
+}
+
+.Trending-Script-Title {
+    position: absolute;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 40px;
+    left: 15px;
+    top: -5px;
+}
+
+
+
+
+
+
+.Latest-Video-header {
+    position: absolute;
+    color: rgb(163, 163, 163);
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    left: 35px;
+    top: 40px;
+}
+
+.Latest-Script-header {
+    position: absolute;
+    color: rgb(163, 163, 163);
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    left: 35px;
+    top: 40px;
+}
+
+.Trending-Video-header {
+    position: absolute;
+    color: rgb(163, 163, 163);
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    left: 70px;
+    top: 40px;
+}
+
+.Trending-Script-header {
+    position: absolute;
+    color: rgb(163, 163, 163);
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    left: 35px;
+    top: 40px;
+}
+
+
+
+.main-page-grid-content img {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    border-radius: 10px;
+    height: 55%;
+}
+
+
+#main-page-latest-scripts-link {
+    position: absolute;
+    background-color: #5E17EB;
+    border-radius: 50px;
+    border: 0px;
+    color: rgb(204, 204, 204);
+    font-family: 'Sora', sans-serif;
+    height: 40px;
+    top: auto;
+    transform: translate(40px, 400%);
+    width: 250px;
+}
+
+
+.main-page-grid-content button {
+    cursor: pointer;
+}
+
+#main-page-latest-youtube-script-1:hover,
+#main-page-latest-youtube-script-2:hover,
+#main-page-latest-youtube-script-3:hover {
+    background-color: #200d46;
+}
+
+#main-page-latest-youtube-link {
+    position: absolute;
+    background-color: #5E17EB;
+    border-radius: 50px;
+    border: 0px;
+    color: rgb(204, 204, 204);
+    font-family: 'Sora', sans-serif;
+    height: 40px;
+    top: auto;
+    transform: translate(40px, 600%);
+    width: 250px;
+}
+
+#main-page-latest-youtube-link:hover {
+    background-color: #200d46;
+}
+
+#main-page-latest-scripts-link:hover {
+    background-color: #200d46;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.active:hover {
+    background-color: black;
+    color: beige
+}
+
+
+#main-page-left-banner-ad {
+    position: absolute;
+    width: 120px;
+    height: 600px;
+    top: 25px;
+    left: 20px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+}
+
+#main-page-left-banner-ad img {
+    border-radius: 15px;
+}
+
+
+#main-page-right-banner-ad {
+    position: absolute;
+    width: 120px;
+    height: 600px;
+    top: 25px;
+    left: 92.3%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+    z-index: 0;
+}
+
+#main-page-right-banner-ad img {
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+#main-page-content-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    top: 1190px;
+    left: 135px;
+    width: 1600px;
+    background-color: transparent;
+    height: 70%;
+    column-gap: 0px;
+    row-gap: 45px;
+    align-items: center;
+    align-content: center;
+}
+
+.main-page-grid-content {
+    display: flex;
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    width: 450px;
+    height: 550px;
+    border-radius: 13px;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+
+
+#Header{
+    position: absolute;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 3.2vw;
+    top: -35px;
+}
+
+#GameName{
+    position: absolute;
+    color: rgb(202, 202, 202);
+    font-family: 'Sora', sans-serif;
+    font-size: 1.5vw;
+    top: 70px
+}
+
+#image{
+    position: absolute;
+    height: auto;
+    width: 70%;
+    top: 150px;
+    right: 15%;
+}
+
+#Tallimage{
+    position: absolute;
+    height: auto;
+    width: 60%;
+    top: 140px;
+    right: 20%;
+}
+
+#Button{
+    position: absolute;
+    background-color: #5E17EB;
+    border-radius: 50px;
+    border: 0px;
+    color: rgb(204, 204, 204);
+    font-family: 'Sora', sans-serif;
+    height: 60px;
+    width: 250px;
+    bottom: 30px;
+}
+
+#Button:hover{
+    background-color: #381185;
+}
