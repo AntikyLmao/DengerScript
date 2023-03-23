@@ -116,19 +116,19 @@ body {
     margin-left: 20px;
 }
 
-    .main-page-navbar-logo:hover {
-        cursor: pointer;
-        background-color: rgb(19, 19, 19);
-    }
+.main-page-navbar-logo:hover {
+    cursor: pointer;
+    background-color: rgb(19, 19, 19);
+}
 
 
 
-    .main-page-navbar-logo img {
-        position: relative;
-        background-color: transparent;
-        aspect-ratio: 1/1;
-        height: 70px;
-    }
+.main-page-navbar-logo img {
+    position: relative;
+    background-color: transparent;
+    aspect-ratio: 1/1;
+    height: 70px;
+}
 
 .main-page-navbar-header {
     position: relative;
@@ -154,12 +154,12 @@ body {
     display: block;
 }
 
-    #main-page-navbar-menu-icon img {
-        position: relative;
-        background-color: transparent;
-        aspect-ratio: 1/1;
-        height: 55px;
-    }
+#main-page-navbar-menu-icon img {
+    position: relative;
+    background-color: transparent;
+    aspect-ratio: 1/1;
+    height: 55px;
+}
 
 #desktop-navbar-buttons {
     display: grid;
@@ -189,27 +189,27 @@ body {
     padding-top: 60px;
 }
 
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        font-family: 'Sora', sans-serif;
-    }
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Sora', sans-serif;
+}
 
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 .Latest-Video-Title {
     position: absolute;
@@ -336,9 +336,9 @@ body {
     width: 250px;
 }
 
-    #main-page-latest-youtube-link:hover {
-        background-color: #200d46;
-    }
+#main-page-latest-youtube-link:hover {
+    background-color: #200d46;
+}
 
 #main-page-latest-scripts-link:hover {
     background-color: #200d46;
@@ -349,9 +349,9 @@ body {
         padding-top: 15px;
     }
 
-        .sidenav a {
-            font-size: 18px;
-        }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .active {
@@ -359,10 +359,10 @@ body {
     color: black;
 }
 
-    .active:hover {
-        background-color: black;
-        color: beige
-    }
+.active:hover {
+    background-color: black;
+    color: beige
+}
 
 
 #main-page-left-banner-ad {
@@ -373,11 +373,12 @@ body {
     left: 20px;
     background-color: rgb(32, 32, 32);
     border-radius: 15px;
+
 }
 
-    #main-page-left-banner-ad img {
-        border-radius: 15px;
-    }
+#main-page-left-banner-ad img {
+    border-radius: 15px;
+}
 
 
 #main-page-right-banner-ad {
@@ -389,11 +390,12 @@ body {
     background-color: rgb(32, 32, 32);
     border-radius: 15px;
     z-index: 0;
+
 }
 
-    #main-page-right-banner-ad img {
-        border-radius: 15px;
-    }
+#main-page-right-banner-ad img {
+    border-radius: 15px;
+}
 
 
 #main-page-content-container {
@@ -447,9 +449,9 @@ footer {
         border-radius: 15px;
     }
 
-        #main-page-left-banner-ad img {
-            border-radius: 15px;
-        }
+    #main-page-left-banner-ad img {
+        border-radius: 15px;
+    }
 
 
     #main-page-right-banner-ad {
@@ -463,9 +465,9 @@ footer {
         z-index: 0;
     }
 
-        #main-page-right-banner-ad img {
-            border-radius: 15px;
-        }
+    #main-page-right-banner-ad img {
+        border-radius: 15px;
+    }
 
 
     #main-page-content-container {
@@ -557,12 +559,12 @@ footer {
         left: 91%;
     }
 
-        #main-page-navbar-menu-icon img {
-            position: relative;
-            background-color: transparent;
-            aspect-ratio: 1/1;
-            height: 55px;
-        }
+    #main-page-navbar-menu-icon img {
+        position: relative;
+        background-color: transparent;
+        aspect-ratio: 1/1;
+        height: 55px;
+    }
 
 
 
@@ -1704,12 +1706,12 @@ footer {
         top: -133%;
     }
 
-        #main-page-navbar-menu-icon img {
-            position: relative;
-            background-color: transparent;
-            aspect-ratio: 1/1;
-            height: 45px;
-        }
+    #main-page-navbar-menu-icon img {
+        position: relative;
+        background-color: transparent;
+        aspect-ratio: 1/1;
+        height: 45px;
+    }
 
     .main-page-navbar-logo {
         position: relative;
@@ -1724,12 +1726,12 @@ footer {
         top: 7px;
     }
 
-        .main-page-navbar-logo img {
-            position: relative;
-            background-color: transparent;
-            aspect-ratio: 1/1;
-            height: 60px;
-        }
+    .main-page-navbar-logo img {
+        position: relative;
+        background-color: transparent;
+        aspect-ratio: 1/1;
+        height: 60px;
+    }
 }
 
 
@@ -1963,12 +1965,12 @@ footer {
         top: -133%;
     }
 
-        #main-page-navbar-menu-icon img {
-            position: relative;
-            background-color: transparent;
-            aspect-ratio: 1/1;
-            height: 45px;
-        }
+    #main-page-navbar-menu-icon img {
+        position: relative;
+        background-color: transparent;
+        aspect-ratio: 1/1;
+        height: 45px;
+    }
 
     .main-page-navbar-logo {
         position: relative;
@@ -1983,12 +1985,12 @@ footer {
         top: 7px;
     }
 
-        .main-page-navbar-logo img {
-            position: relative;
-            background-color: transparent;
-            aspect-ratio: 1/1;
-            height: 60px;
-        }
+    .main-page-navbar-logo img {
+        position: relative;
+        background-color: transparent;
+        aspect-ratio: 1/1;
+        height: 60px;
+    }
 }
 
 
